@@ -8,3 +8,12 @@ nav:
 
 markdown_extensions:
   - pymdownx.superfences
+
+plugins:
+  - search
+  - mermaid2
+
+theme:
+  name: material
+mermaid:
+  javascript

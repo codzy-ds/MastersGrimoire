@@ -7,21 +7,23 @@ Here is the structure of the database:
 ---
 title: Database structure
 ---
-    CUSTOMER ||--o{ ORDER : places
+erDiagram
     CUSTOMER {
         string name
         string custNumber
         string sector
     }
-    ORDER ||--|{ LINE-ITEM : contains
     ORDER {
         int orderNumber
         string deliveryAddress
     }
-    LINE-ITEM {
+    LINE_ITEM {
         string productCode
         int quantity
         float pricePerUnit
     }
+
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE_ITEM : contains
 ```
 
